@@ -1,0 +1,51 @@
+package springjdbc1;
+import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+/*few steps to established the connection
+
+
+1. import the packages--->>>>>java.sql
+
+2. load and $ register the driver--->>>>>
+
+3. Established the connection--->>>>>
+
+4. Create the statement--->>>>>
+
+5. Execute the Query--->>>>>
+
+6. Process the result--->>>>>
+
+7. Close the connection.*/
+
+public class jdbc {
+
+	public static void main(String[] args) throws Exception {
+	
+
+		String url="jdbc:mysql://localhost:3306/jdbc";
+		String un="root";
+		String pw="mysql";
+		String query="SELECT age FROM student where age=21";
+		
+		
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		Connection con=DriverManager.getConnection(url,un,pw);
+		Statement st=con.createStatement();
+		ResultSet rs=st.executeQuery(query);
+		rs.next();
+		String name=rs.getString("age");
+		System.out.println(name);
+		st.close();
+		con.close();
+	//DDL(It stands for Data Definition Language)-> Whenever To create the structure of database we use ddl
+	//DML(It stands for Data Manipulation Language)->Whenever To insert the data into database we use dml
+	//DQL(It stands for Data Query Language)-> Whenever to get the data from database we fire a query to get the data.
+		
+	}
+
+}

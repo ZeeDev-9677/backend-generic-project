@@ -1,0 +1,44 @@
+package com.jdbc;
+import java.sql.*;
+
+/*few steps to established the connection
+
+
+1. import the packages--->>>>>java.sql
+
+2. load and $ register the driver--->>>>>
+
+3. Established the connection--->>>>>
+
+4. Create the statement--->>>>>
+
+5. Execute the Query--->>>>>
+
+6. Process the result--->>>>>
+
+7. Close the connection.*/
+
+
+
+public class jdbcdemo {
+
+	public static void main(String[] args) throws Exception
+	{
+		String url="jdbc:mysql://localhost:3306/jdbc";
+		String un="root";
+		String pw="mysql";
+		String query="SELECT age FROM student where age=34";
+		
+		// TODO Auto-generated method stub
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con=DriverManager.getConnection(url,un,pw);
+		Statement st=con.createStatement();
+		ResultSet rs=st.executeQuery(query);
+		rs.next();
+		String name=rs.getString("Age");
+		System.out.println(name);
+		st.close();
+		con.close();
+	}
+
+}

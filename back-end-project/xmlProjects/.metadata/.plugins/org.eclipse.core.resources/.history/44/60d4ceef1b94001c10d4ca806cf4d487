@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.indiaairlines.com/reservation"
+	xmlns:tns="http://www.indigoairlines.com/reservation"
+	elementFormDefault="qualified">
+	<element name="reservation">
+		<complexType>
+			<sequence>
+				<element name="flight" type="tns:flight" />
+				<element name="passenger" type="tns:passenger" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="passenger">
+		<sequence>
+			<element name="lastname" type="tns:stringmax15" />
+			<element name="firsttname" type="tns:stringmax15" />
+			<element name="middlename" type="tns:stringmax15" />
+			<element name="email" type="tns:stringmax15" />
+			<element name="mobile" type="tns:mobile" />
+		</sequence>
+	</complexType>
+	<complexType name="flight">
+		<sequence>
+			<element name="flightNumber" type="tns:stringmax15" />
+			<element name="operatingAirlines" type="tns:stringmax15" />
+			<element name="arrivalCity" type="tns:stringmax15" />
+			<element name="dateOfDeparture" type="date" />
+			<element name="departureTime" type="time" />
+		</sequence>
+	</complexType>
+
+
+	<simpleType name="stringmax15">
+		<restriction base="string">
+			<maxLength value="15" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="mobile">
+		<restriction base="string">
+			<pattern value="[0-9]{10}"></pattern>
+		</restriction>
+	</simpleType>
+	<simpleType name="operatingAirlines">
+		<restriction base="string">
+			<enumeration value="AirAsia" />
+			<enumeration value="Indigo" />
+			<enumeration value="Vistara" />
+			<enumeration value="AirIndia" />
+		</restriction>
+	</simpleType>
+</schema>

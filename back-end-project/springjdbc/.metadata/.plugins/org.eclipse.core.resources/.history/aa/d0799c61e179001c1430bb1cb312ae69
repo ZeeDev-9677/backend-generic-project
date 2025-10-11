@@ -1,0 +1,19 @@
+package com.jdbc;
+import java.sql.*;
+public class jdbcdemo {
+
+	public static void main(String[] args) throws Exception
+	{
+		String url="jdbc:mysql://localhost:3306/jdbc";
+		String un="root";
+		String pw="mysql";
+		String query="SELECT age FROM student where age=34";
+		
+		// TODO Auto-generated method stub
+		Class.forName("Driver");
+		Connection con=DriverManager.getConnection(url,un,pw);
+		Statement st=con.createStatement();
+		st.execute(query);
+	}
+
+}

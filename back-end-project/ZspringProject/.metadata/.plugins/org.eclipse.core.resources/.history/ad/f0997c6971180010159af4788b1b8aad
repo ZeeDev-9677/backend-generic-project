@@ -1,0 +1,42 @@
+package StreamApi_InterviewQuestions;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class ListOfStringQsn {
+
+	public static void main(String[] args) {
+//		List<List<String>> lst=Arrays.asList(Arrays.asList("apple","mango"),Arrays.asList("Grps","bnana"),Arrays.asList("kiwi","dragon"));
+//		
+//		List<String> nl=lst.stream().flatMap(x->x.stream()).collect(Collectors.toList());
+//		System.out.println(nl);
+//		List<String> collect = nl.stream().filter(x->x.startsWith("k")).collect(Collectors.toList());
+//		System.out.println(collect);
+		
+		/* count the no of strings present in list */
+		List<String> ls=Arrays.asList("apple","mango","banana","pinaplle");
+//		long count = ls.stream().count();
+//		System.out.println(count);
+		          /* OR */
+		Long collect = ls.stream().collect(Collectors.counting());
+		System.out.println("ANS"+collect);
+		
+//		String str="jksdjcd";
+//		String[] split = str.split("");
+//		System.out.println(split);
+		
+		
+		// partitioning into even and odd by using partitioningBy() method of stream api.
+//		List<Integer> lst = Arrays.asList(23, 5, 12, 24, 30);
+//		Map<Boolean, List<Integer>> collect = lst.stream().collect(Collectors.partitioningBy(x -> x % 2 == 0));
+//		System.out.println("Odd Even numbers are :" + collect);
+		
+		// partitioning into highest and lowest value by using partitioningBy() method of stream api.
+//		List<Integer> lst = Arrays.asList(2093, 5000, 11002, 24090, 300909,8989);
+//		Map<Boolean, List<Integer>> highestValue = lst.stream().collect(Collectors.partitioningBy(x->x>10000));
+//		System.out.println(highestValue);
+	}
+
+}

@@ -1,0 +1,14 @@
+package basicodes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Tsting {
+
+	public static void main(String[] args) {
+		List<Integer> lst=new ArrayList<Integer>();
+		lst.add(1);
+		lst.add(23);
+	}
+
+}

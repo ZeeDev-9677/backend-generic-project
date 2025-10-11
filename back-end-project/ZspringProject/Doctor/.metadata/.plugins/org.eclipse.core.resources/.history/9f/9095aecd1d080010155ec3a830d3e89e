@@ -1,0 +1,20 @@
+package com.doctor.registration.services;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.doctor.registration.dtos.DoctorName;
+
+@Service
+public class DoctorServiceImpl implements DoctorService{
+
+	@Override
+	public ResponseEntity<String> saveDoct(List<DoctorName> doctName) {
+		// TODO Auto-generated method stub
+		
+		return null;
+	}
+
+}

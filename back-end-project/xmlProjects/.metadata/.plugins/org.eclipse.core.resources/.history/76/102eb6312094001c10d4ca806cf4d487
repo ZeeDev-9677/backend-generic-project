@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.indiaairlines.com/reservation"
+	xmlns:tns="http://www.indiaairlines.com/reservation"
+	elementFormDefault="qualified">
+	<include schemaLocation="Flight.xsd"></include>
+	<element name="reservation">
+		<complexType>
+			<sequence>
+				<element name="flight" type="tns:flight" />
+				<element name="passenger" type="tns:passenger" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="passenger">
+		<sequence>
+			<element name="lastname" type="tns:stringmax15" />
+			<element name="firsttname" type="tns:stringmax15" />
+			<element name="middlename" type="tns:stringmax15" />
+			<element name="email" type="tns:stringmax15" />
+			<element name="mobile" type="tns:mobile" />
+		</sequence>
+	</complexType>
+	
+
+
+	
+
+	
+	<simpleType name="operatingAirlines">
+		<restriction base="string">
+			<enumeration value="AirAsia" />
+			<enumeration value="Indigo" />
+			<enumeration value="Vistara" />
+			<enumeration value="AirIndia" />
+		</restriction>
+	</simpleType>
+</schema>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="http://www.zeeshan.com/Employee" 
+ xmlns:tns="http://www.zeeshan.com/Employee" elementFormDefault="qualified">
+ <element name="Employee" type="tns:Employee"/>
+ <complexType name="Employee">
+ <sequence>
+ <element name="name" type="string"/>
+ <element name="age" type="int"/>
+ <element name="email" type="string"/>
+ <element name="gender" type="string"/>
+ <element name="phone" type="string"/>
+ </sequence>
+ </complexType>
+ 
+<simpleType name="String10Chars">
+<restriction base="string">
+<maxLength value="10"/>
+</restriction>
+</simpleType>
+</schema>

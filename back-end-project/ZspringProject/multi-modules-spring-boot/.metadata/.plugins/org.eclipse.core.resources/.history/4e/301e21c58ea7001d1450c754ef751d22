@@ -1,0 +1,14 @@
+package oops;
+
+public class PolymorphismMain {
+
+	public static void main(String[] args) {
+
+		PolymorphismCat cat = new PolymorphismCat();
+		cat.animalSound();
+
+		// or
+		/* new PolymorphismCat().animalSound(); */
+	}
+
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+
+<dependencies>
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.22</version>
+	</dependency>
+</dependencies>

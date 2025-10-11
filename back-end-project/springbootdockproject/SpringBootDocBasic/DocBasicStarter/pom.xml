@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.myprojectdoc</groupId>
+		<artifactId>SpringBootDocBasic</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.myprojectdoc</groupId>
+	<artifactId>DocBasicStarter</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>DocBasicStarter</name>
+	<description>DocBasicStarter</description>
+	<properties>
+		<java.version>11</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			  <groupId>com.myprojectdoc.docbasic</groupId>
+			  <artifactId>DocBasic</artifactId>
+			  <version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<!-- <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency> -->
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<outputDirectory>../target</outputDirectory>
+				</configuration>
+			</plugin>
+		</plugins>
+		<finalName>Generic-0.0.1-SNAPSHOT</finalName>
+	</build>
+
+</project>

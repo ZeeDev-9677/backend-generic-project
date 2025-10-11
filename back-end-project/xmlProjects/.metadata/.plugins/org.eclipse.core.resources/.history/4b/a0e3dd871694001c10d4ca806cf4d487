@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.indigoairlines.com/reservation"
+	xmlns:tns="http://www.indigoairlines.com/reservation"
+	elementFormDefault="qualified">
+</schema>

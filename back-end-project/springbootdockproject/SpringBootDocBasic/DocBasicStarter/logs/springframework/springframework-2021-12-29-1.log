@@ -1,0 +1,3 @@
+2021-12-29 00:04:38,852 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(43)-127.0.0.1] Application shutdown requested.
+2021-12-29 00:04:38,858 DEBUG org.springframework.boot.availability.ApplicationAvailabilityBean [RMI TCP Connection(43)-127.0.0.1] Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-12-29 00:04:38,859 DEBUG org.springframework.context.support.AbstractApplicationContext [RMI TCP Connection(43)-127.0.0.1] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6b530eb9, started on Tue Dec 28 23:26:08 IST 2021

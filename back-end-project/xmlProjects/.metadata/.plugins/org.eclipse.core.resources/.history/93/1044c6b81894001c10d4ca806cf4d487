@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:reservation xmlns:tns="http://www.indigoairlines.com/reservation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.indigoairlines.com/reservation reservation.xsd ">
+  <tns:flight>
+    <tns:flightNumber>tns:flightNumber</tns:flightNumber>
+    <tns:operatingAirlines>tns:operatingAirlines</tns:operatingAirlines>
+    <tns:arrivalCity>tns:arrivalCity</tns:arrivalCity>
+    <tns:dateOfDeparture>2001-01-01</tns:dateOfDeparture>
+    <tns:departureTime>12:00:00</tns:departureTime>
+  </tns:flight>
+  <tns:passenger>
+    <tns:lastname>tns:lastname</tns:lastname>
+    <tns:firsttname>tns:firsttname</tns:firsttname>
+    <tns:middlename>tns:middlename</tns:middlename>
+    <tns:email>tns:email</tns:email>
+    <tns:mobile>tns:mobile</tns:mobile>
+  </tns:passenger>
+</tns:reservation>

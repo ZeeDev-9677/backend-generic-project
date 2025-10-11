@@ -1,0 +1,68 @@
+package StreamApi_InterviewQuestions;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class HighestSalary {
+
+	public static void main(String[] args) {
+		List<Employee> empList = new ArrayList<>();
+
+		empList.add(new Employee("Abdul", 21, 45000.0, "SE","28932893"));
+		empList.add(new Employee("Morris", 19, 13000.0, "Developer","72872783"));
+		empList.add(new Employee("Rahil", 25, 435000.0, "Manager","72784824"));
+		empList.add(new Employee("John", 29, 415000.0, "CEO","28642893"));
+		empList.add(new Employee("adam", 30, 500000.0, "SrEng","923477"));
+		empList.add(new Employee("Marriq", 45, 3782323.0, "Head","732486642"));
+		empList.add(new Employee("Pane", 33, 28878.0, "Founder","73247878"));
+
+		/* highest salary */
+//		Employee highest = empList.stream().sorted(Comparator.comparingDouble(Employee::getSal).reversed())
+//				.findFirst().get();
+//		System.out.print(highest);
+
+		/* second highest salary */
+
+//		Employee secondHighest = empList.stream().sorted(Comparator.comparingDouble(Employee::getSal).reversed())
+//				.skip(1).findFirst().get();
+//		System.out.print(secondHighest);
+
+		/* third highest salary */
+		
+//		Employee thirdHighest = empList.stream().sorted(Comparator.comparingDouble(Employee::getSal).reversed()).skip(2)
+//				.findFirst().get();
+//		System.out.print(thirdHighest);
+		
+		
+		/* average salary */
+		
+//		Double collect = empList.stream().collect(Collectors.averagingDouble(Employee::getSal));
+//		System.out.println(collect);
+		
+		/* sort the list of employee  by name */
+		
+		List<Employee> listOfEmp = empList.stream().sorted(Comparator.comparing(Employee::getName))
+				.collect(Collectors.toList());
+		listOfEmp.forEach(n -> System.out.println(n));
+
+		
+		
+//		*****************************NOTE for "::" *********************************
+		
+//		In Java 8 and later, :: is the method reference operator, used to refer to a method without executing it, allowing for concise lambda expressions. 
+//		Here's a breakdown:
+//		What it does:
+//		It's a shorthand way to express a lambda expression when the lambda's body is simply a call to an existing method. 
+//		How it works:
+//		It allows you to directly reference a method (either static or instance) by its name, rather than writing out the entire lambda expression. 
+//		Examples:
+//		Static method reference: ClassName::methodName (e.g., String::toUpperCase) 
+//		Instance method reference: object::methodName (e.g., myObject::myMethod) 
+//		Instance method reference (arbitrary object): ClassName::methodName (e.g., String::equals) 
+//		Benefits:
+//		Makes code more readable and compact, especially when using functional interfaces with streams and other lambda-based feature
+	}
+
+}

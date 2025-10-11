@@ -1,0 +1,26 @@
+package colllection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Hashmap {
+
+	@SuppressWarnings("rawtypes")
+	public static void main(String[] args) {
+
+		HashMap<Integer, String> m = new HashMap<Integer, String>();
+		m.put(1, "abc");
+		m.put(2, "addf");
+		m.put(null,null);///print null key and value
+		m.put(3, "dddd");
+		m.put(4, "alpha");
+		m.put(5, "vdgvfd");
+		m.put(6, "alpha");   //Hashmap one key contains multiple values like id 3,6-->alpha
+		System.out.println("My First hashmap code =");
+		for (Map.Entry var_name : m.entrySet()) { //Map.Entry contains getKye() and getValue() method...Entry is interface
+												//present inside Map Interface
+			System.out.println(var_name.getKey() + " " + var_name.getValue());
+		}
+	}
+
+}

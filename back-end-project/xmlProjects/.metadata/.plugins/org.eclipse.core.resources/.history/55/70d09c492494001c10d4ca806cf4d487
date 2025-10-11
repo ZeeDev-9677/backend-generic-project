@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.indiaairlines.com/reservation"
+	xmlns:tns="http://www.indiaairlines.com/reservation"
+	elementFormDefault="qualified">
+
+	<include schemaLocation="CommonDetails.xsd"></include>
+
+	<complexType name="flight">
+		<sequence>
+			<element name="flightNumber" type="tns:stringmax15" />
+			<element name="operatingAirlines"
+				type="tns:operatingAirlines" />
+			<element name="arrivalCity" type="tns:stringmax15" />
+			<element name="dateOfDeparture" type="date" />
+			<element name="departureTime" type="time" />
+		</sequence>
+	</complexType>
+
+	<simpleType name="operatingAirlines">
+		<restriction base="string">
+			<enumeration value="AirAsia" />
+			<enumeration value="Indigo" />
+			<enumeration value="Vistara" />
+			<enumeration value="AirIndia" />
+		</restriction>
+	</simpleType>
+	
+</schema>

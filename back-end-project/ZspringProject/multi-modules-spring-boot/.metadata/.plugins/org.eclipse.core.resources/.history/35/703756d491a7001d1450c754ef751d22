@@ -1,0 +1,12 @@
+package oops;
+
+public class InheritanceColor extends InheritanceCar{
+	public String brake="hydrolic brake";
+
+	public static void main(String[] args) {
+		InheritanceColor col=new InheritanceColor();
+		System.out.println("brandName is :"+col.brand);
+		col.colorName();
+	}
+
+}

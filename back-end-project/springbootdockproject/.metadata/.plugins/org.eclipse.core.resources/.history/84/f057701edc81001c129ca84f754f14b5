@@ -1,0 +1,13 @@
+package com.firstspringboot.main;
+@RestController;
+public class FirstSpringBoot {
+	@RequestMapping("/login")
+	String Home() {
+		return "Welcom to Home Page";
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+}

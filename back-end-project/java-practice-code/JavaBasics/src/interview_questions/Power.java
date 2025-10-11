@@ -1,0 +1,17 @@
+package interview_questions;
+// i/p-> a=2, b=3
+//o/p->c=8  i.e 2^3=8
+public class Power {
+
+	public static void main(String[] args) {
+		int a=2,b=3,c=0;
+		
+		System.out.println(Math.pow(a, b));
+
+//		for(int i=1;i<=b;i++) {
+//			c=b*a;
+//		}
+//		System.out.println(c);
+	}
+
+}

@@ -1,0 +1,17 @@
+package interviewQuestions;
+
+public class ReeverseString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String str="ajdg";
+String nws=str.toUpperCase();
+//char[] arr=nws.toCharArray();
+int n=nws.length();
+//int n=nws.length();
+for(int i=n-1;n>0;i--) {
+	System.out.println(nws);
+}
+	}
+
+}

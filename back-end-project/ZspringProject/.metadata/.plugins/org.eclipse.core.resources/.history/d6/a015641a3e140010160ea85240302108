@@ -1,0 +1,28 @@
+package ArrayQuestions;
+
+public class numberCheckInArray {
+
+	public static void main(String[] args) {
+		int[] arr=new int[] {2,1,6,3};
+		int chck=37;
+		int c=0;
+//		boolean nmb=true;
+		for(int i=0;i<arr.length;i++) {
+			if(chck==arr[i]) {
+				c++;
+			}
+//			else {
+//				break;
+//			}
+		}
+		
+		if(c>0) {
+			System.out.println("prsnt");
+		}
+		else {
+		System.out.println("not prsnt");
+		}
+		
+	}
+
+}

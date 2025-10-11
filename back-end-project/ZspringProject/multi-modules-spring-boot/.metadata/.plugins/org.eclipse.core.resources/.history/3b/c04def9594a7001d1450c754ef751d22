@@ -1,0 +1,10 @@
+package oops;
+
+public class EncapsulationEmployee {
+	private String empName="Mark";
+	
+	public void setName(String newName) {
+	  this.empName=newName;	
+	}
+
+}

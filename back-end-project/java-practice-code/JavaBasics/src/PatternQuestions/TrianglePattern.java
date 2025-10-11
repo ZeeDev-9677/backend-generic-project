@@ -1,0 +1,39 @@
+package PatternQuestions;
+
+public class TrianglePattern {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		int n = 5;
+//		for (int i = 0; i < n; i++) {
+//			for (int j = n-1; j>i; j--) {
+//				//printing spaces just like n below to view the space by printing n
+//				System.out.print(" "); 
+////				System.out.print("n"); 
+//			}
+//			for (int k = 0; k <=i; k++) {
+//				//printing star
+//				System.out.print("* ");
+//			} 
+////			for new line after printing star each 'i' th execution
+//			System.out.println();
+//		}
+		
+		
+		/* practice mode */
+		int n=5;
+		
+		for(int i=0;i<n;i++) {
+			for(int j=n-1;j>i;j--) {
+				System.out.print("S");
+				
+			}
+			for(int k=0;k<=i;k++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		
+	}
+
+}

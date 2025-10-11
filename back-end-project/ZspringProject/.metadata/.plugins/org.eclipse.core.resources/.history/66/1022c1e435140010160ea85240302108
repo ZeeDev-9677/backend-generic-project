@@ -1,0 +1,19 @@
+package ArrayQuestions;
+
+public class numberCheckInArray {
+
+	public static void main(String[] args) {
+		int[] arr=new int[] {2,1,6,3};
+		int chck=6;
+//		boolean nmb=true;
+		for(int i:arr) {
+			if(chck==i) {
+				System.out.println("prsnt");
+			}
+			else {
+				break;
+			}
+		}
+	}
+
+}

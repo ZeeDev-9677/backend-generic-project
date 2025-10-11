@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\MyFirstSpringBoot-Demo\pom.xml"/>
+			<item value="C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\MyFirstSpringBoot-Demo"/>
+			<item value="C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic\DocBasic"/>
+			<item value="C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.springboot.demo-2"/>
+			<item value="org.springframework.boot"/>
+			<item value="com.springboot-2"/>
+			<item value="org."/>
+			<item value="com.myfirstspringboot"/>
+			<item value="com.myprojectdoc.docbasic"/>
+			<item value="com.myprojectdoc"/>
+			<item value="DocBasic"/>
+		</list>
+		<list key="name">
+			<item value="SpringBootDemo-2"/>
+			<item value="MyFirstSpringBoot-Demo"/>
+			<item value="DocBasic"/>
+			<item value="SpringBootDocBasic"/>
+		</list>
+		<list key="artifactId">
+			<item value="SpringBootDemo-2"/>
+			<item value="spring-boot-starter-parent"/>
+			<item value="MyFirstSpringBoot-Demo"/>
+			<item value="DocBasic"/>
+			<item value="SpringBottDocBasic"/>
+			<item value="com.myprojectdoc.docbasic"/>
+			<item value="SpringBootDocBasic"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+			<item value="2.6.0"/>
+			<item value="21"/>
+			<item value="212"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

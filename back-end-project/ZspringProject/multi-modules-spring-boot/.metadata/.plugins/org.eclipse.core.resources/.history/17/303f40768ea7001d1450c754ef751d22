@@ -1,0 +1,10 @@
+package oops;
+
+public class PolymorphismMain {
+
+	public static void main(String[] args) {
+		new PolymorphismCat().animalSound();
+		
+	}
+
+}

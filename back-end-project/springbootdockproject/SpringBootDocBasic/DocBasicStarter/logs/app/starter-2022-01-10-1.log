@@ -1,0 +1,42 @@
+2022-01-10 12:46:16,854 INFO com.myprojectdoc.main.DocBasicStarterApplication [main] DocBasicStarterApplication main start
+2022-01-10 12:46:17,248 INFO org.springframework.boot.StartupInfoLogger [main] Starting DocBasicStarterApplication using Java 17.0.1 on DESKTOP-D8G69M6 with PID 28656 (C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic\DocBasicStarter\target\classes started by ZEESHAN in C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic\DocBasicStarter)
+2022-01-10 12:46:17,250 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-01-10 12:46:17,251 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-01-10 12:46:18,497 INFO org.springframework.boot.StartupInfoLogger [main] Started DocBasicStarterApplication in 1.555 seconds (JVM running for 2.523)
+2022-01-10 12:46:18,499 INFO com.myprojectdoc.main.DocBasicStarterApplication [main] DocBasicStarterApplication main end
+2022-01-10 15:14:13,855 INFO org.springframework.boot.StartupInfoLogger [main] Starting DocBasicStarterApplicationTests using Java 11.0.12 on DESKTOP-D8G69M6 with PID 25088 (started by ZEESHAN in C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic\DocBasicStarter)
+2022-01-10 15:14:13,857 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-01-10 15:14:13,858 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-01-10 15:14:15,813 INFO org.springframework.boot.StartupInfoLogger [main] Started DocBasicStarterApplicationTests in 2.255 seconds (JVM running for 4.012)
+2022-01-10 15:30:05,653 INFO org.springframework.boot.StartupInfoLogger [main] Starting DocBasicStarterApplicationTests using Java 11.0.12 on DESKTOP-D8G69M6 with PID 27476 (started by ZEESHAN in C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic\DocBasicStarter)
+2022-01-10 15:30:05,657 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-01-10 15:30:05,657 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-01-10 15:30:08,484 INFO org.springframework.boot.StartupInfoLogger [main] Started DocBasicStarterApplicationTests in 3.201 seconds (JVM running for 4.966)
+2022-01-10 15:39:52,745 INFO org.springframework.boot.StartupInfoLogger [main] Starting DocBasicStarterApplicationTests using Java 11.0.12 on DESKTOP-D8G69M6 with PID 18484 (started by ZEESHAN in C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic\DocBasicStarter)
+2022-01-10 15:39:52,748 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-01-10 15:39:52,748 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-01-10 15:39:55,362 INFO org.springframework.boot.StartupInfoLogger [main] Started DocBasicStarterApplicationTests in 2.971 seconds (JVM running for 4.839)
+2022-01-10 20:48:54,349 INFO com.myprojectdoc.main.DocBasicStarterApplication [main] DocBasicStarterApplication main start
+2022-01-10 20:48:54,801 INFO org.springframework.boot.StartupInfoLogger [main] Starting DocBasicStarterApplication using Java 17.0.1 on DESKTOP-D8G69M6 with PID 8040 (C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic\DocBasicStarter\target\classes started by ZEESHAN in C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic\DocBasicStarter)
+2022-01-10 20:48:54,804 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-01-10 20:48:54,805 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-01-10 20:48:56,221 INFO org.springframework.boot.StartupInfoLogger [main] Started DocBasicStarterApplication in 1.779 seconds (JVM running for 2.739)
+2022-01-10 20:48:56,223 INFO com.myprojectdoc.main.DocBasicStarterApplication [main] DocBasicStarterApplication main end
+2022-01-10 20:55:38,392 INFO com.myprojectdoc.main.DocBasicStarterApplication [main] DocBasicStarterApplication main start
+2022-01-10 20:55:38,948 INFO org.springframework.boot.StartupInfoLogger [main] Starting DocBasicStarterApplication using Java 17.0.1 on DESKTOP-D8G69M6 with PID 23920 (C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic\DocBasicStarter\target\classes started by ZEESHAN in C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic\DocBasicStarter)
+2022-01-10 20:55:38,952 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-01-10 20:55:38,953 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-01-10 20:55:40,759 INFO org.springframework.boot.StartupInfoLogger [main] Started DocBasicStarterApplication in 2.258 seconds (JVM running for 4.946)
+2022-01-10 20:55:40,762 INFO com.myprojectdoc.main.DocBasicStarterApplication [main] DocBasicStarterApplication main end
+2022-01-10 23:54:53,697 INFO com.myprojectdoc.main.DocBasicStarterApplication [main] DocBasicStarterApplication main start
+2022-01-10 23:54:54,174 INFO org.springframework.boot.StartupInfoLogger [main] Starting DocBasicStarterApplication using Java 17.0.1 on DESKTOP-D8G69M6 with PID 12760 (C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic\DocBasicStarter\target\classes started by ZEESHAN in C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic\DocBasicStarter)
+2022-01-10 23:54:54,178 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-01-10 23:54:54,178 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-01-10 23:54:56,232 INFO org.springframework.boot.StartupInfoLogger [main] Started DocBasicStarterApplication in 2.441 seconds (JVM running for 3.732)
+2022-01-10 23:54:56,240 INFO com.myprojectdoc.main.DocBasicStarterApplication [main] DocBasicStarterApplication main end
+2022-01-10 23:55:35,777 INFO com.myprojectdoc.main.DocBasicStarterApplication [main] DocBasicStarterApplication main start
+2022-01-10 23:55:36,316 INFO org.springframework.boot.StartupInfoLogger [main] Starting DocBasicStarterApplication using Java 17.0.1 on DESKTOP-D8G69M6 with PID 19176 (C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic\DocBasicStarter\target\classes started by ZEESHAN in C:\Users\ZEESHAN\Desktop\MyProject\springbootdockproject\SpringBootDocBasic\DocBasicStarter)
+2022-01-10 23:55:36,320 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-01-10 23:55:36,321 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-01-10 23:55:38,023 INFO org.springframework.boot.StartupInfoLogger [main] Started DocBasicStarterApplication in 2.133 seconds (JVM running for 3.603)
+2022-01-10 23:55:38,026 INFO com.myprojectdoc.main.DocBasicStarterApplication [main] DocBasicStarterApplication main end

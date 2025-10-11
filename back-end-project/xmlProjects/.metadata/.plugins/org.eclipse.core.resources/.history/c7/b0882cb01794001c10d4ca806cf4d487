@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.indigoairlines.com/reservation"
+	xmlns:tns="http://www.indigoairlines.com/reservation"
+	elementFormDefault="qualified">
+	<element name="reservation">
+		<complexType>
+			<sequence>
+				<element name="flight" />
+				<element name="passenger" type="tns:passenger"/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="passenger">
+		<sequence>
+			<element name="lastname" type="string" />
+			<element name="firsttname" type="string" />
+			<element name="middlename" type="string" />
+			<element name="email" type="string" />
+			<element name="mobile" type="string" />
+		</sequence>
+	</complexType>
+	<complexType name="flight">
+	<sequence>
+	<element name="flightNumber"/>
+	<element name="operatingAirlines"/>
+	<element name="arrivalCity"/>
+	<element name="dateOfDeparture"/>
+	<element name="departureTime"/>
+	</sequence>
+	</complexType>
+</schema>

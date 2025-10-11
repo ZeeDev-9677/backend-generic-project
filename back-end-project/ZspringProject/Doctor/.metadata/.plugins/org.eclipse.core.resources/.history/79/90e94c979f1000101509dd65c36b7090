@@ -1,0 +1,29 @@
+package com.doctor.registration.services;
+
+import java.util.List;
+
+import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.doctor.registration.dtos.DoctorName;
+
+@Service
+public class DoctorServiceImpl implements DoctorService {
+
+	@Override
+	public ResponseEntity<String> saveDoct(List<DoctorName> doctName) {
+		ModelMapper modelMapper = new ModelMapper();
+		List<DoctorName> dctrNames = modelMapper.map(doctName, new TypeToken<List<DoctorName>>() {
+		}.getType());
+		
+		for(DoctorName doctorName:dctrNames) {
+			DoctorName doctorName=new DoctorName();
+			doctorName.setDoctName(doctorName.getDoctName());
+			doctorName.setDoctSpelIn(doctorName.getHospName());
+		}
+//		return null;]
+	}
+
+}

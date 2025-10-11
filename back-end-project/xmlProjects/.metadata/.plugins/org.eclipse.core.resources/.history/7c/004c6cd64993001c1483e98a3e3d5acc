@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Employee xmlns:tns="http://www.zeeshan.com/Employee" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.zeeshan.com/Employee Employee.xsd " id="123">
+  <tns:name>zeeshan</tns:name>
+  <tns:age>25</tns:age>
+  <tns:email>abc@gmail.com</tns:email>
+  <tns:gender>Male</tns:gender>
+  <tns:phone>1234567</tns:phone>
+  <tns:paymentType>
+      <tns:cash>13.89</tns:cash>
+  </tns:paymentType>
+  
+  
+</tns:Employee>

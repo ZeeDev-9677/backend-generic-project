@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.springcommonannotations.My_Config&apos; to &apos;CollegeConfig&apos;&#x0D;&#x0A;- Original project: &apos;spring-common-annotations&apos;&#x0D;&#x0A;- Original element: &apos;com.springcommonannotations.My_Config&apos;&#x0D;&#x0A;- Renamed element: &apos;com.springcommonannotations.CollegeConfig&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;My_Config&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.springcommonannotations{My_Config.java[My_Config" matchStrategy="1" name="CollegeConfig" qualified="false" references="true" similarDeclarations="false" stamp="1675700811265" textual="false" version="1.0"/>
+</session>

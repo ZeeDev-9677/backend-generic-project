@@ -1,0 +1,20 @@
+package java_beginners_code;
+
+public class BasicOJ {
+
+	public static void main(String[] args) {
+		int a=0;
+		int b=1;
+		int next=0;
+		int n=5;
+		System.out.print(a+" "+b);
+		for(int i=2;i<n;i++)
+		{
+			next=a+b;
+			System.out.print(" "+next);
+			a=b;
+			b=next;
+		}
+	}
+
+}

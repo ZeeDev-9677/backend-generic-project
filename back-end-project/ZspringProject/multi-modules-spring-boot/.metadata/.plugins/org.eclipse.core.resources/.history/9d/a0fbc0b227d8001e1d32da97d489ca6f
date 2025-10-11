@@ -1,0 +1,18 @@
+package interviewQuestions;
+//Example= i/p-->abcdaf
+//       = o/p-->1 
+public class PrintIndexPosition {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str="abcdaf";
+		for(int i=0;i<str.length();i++) {
+			if(str.charAt(i)) {
+				
+			}
+		}
+
+	}
+
+}

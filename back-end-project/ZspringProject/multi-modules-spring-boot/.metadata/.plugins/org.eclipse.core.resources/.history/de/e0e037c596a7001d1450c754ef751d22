@@ -1,0 +1,11 @@
+package oops;
+
+public class EncapsulationMain {
+
+	public static void main(String[] args) {
+		EncapsulationEmployee emp=new EncapsulationEmployee();
+		emp.setName="Akash";
+		System.out.println("my name is :"+empName);
+	}
+
+}

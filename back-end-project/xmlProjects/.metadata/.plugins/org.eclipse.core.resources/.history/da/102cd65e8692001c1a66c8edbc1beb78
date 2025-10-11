@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="http://www.zeeshan.com/Employee" 
+ xmlns:tns="http://http://www.zeeshan.com/Employee" elementFormDefault="qualified">
+ <element name="Employee" type="tns:Employee"/>
+</schema>

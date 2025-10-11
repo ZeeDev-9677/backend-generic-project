@@ -1,0 +1,10 @@
+package com.dependencyInjection.demo;
+
+public class Exam {
+
+	public static void main(String[] args) {
+	Student st=new Student();
+	st.studentName="ibv";
+	st.dispInfo();
+}
+}

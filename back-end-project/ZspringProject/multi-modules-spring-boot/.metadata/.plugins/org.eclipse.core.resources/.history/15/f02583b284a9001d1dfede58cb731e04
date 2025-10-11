@@ -1,0 +1,56 @@
+package com.school.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.school.entities.Course;
+@Service
+public class CourseServiceImpl implements CourseService {
+	List<Course> list;
+	public CourseServiceImpl() {
+		list=new ArrayList<>();
+		list.add(new Course(145,"Java Basics","this is for beginners"));
+		list.add(new Course(146,"React Basics","this is for intermediate"));
+	}
+
+	@Override
+	public List<Course> getCourse() {
+		
+		return list;
+	}
+
+	@Override
+	public Course getCourse(long courseId) {
+		Course c=null;
+		for(Course cors:list)
+		{
+			if(cors.getId()==courseId) {
+			 c=cors;
+				break;
+			}
+		}
+		return c;
+	}
+
+	@Override
+	public Course addCourse(Course course) {
+		
+		list.add(course);
+		
+		return course;
+	}
+
+	@Override
+	public Course updateCourse(Course course) {
+		list.forEach(e->{
+			if(e.getId()==course.getId()) {
+				e.setTitle(course.getTitle());
+				e.setDescription(course.getDescription());
+			}
+		});
+		return course;
+	}
+
+}

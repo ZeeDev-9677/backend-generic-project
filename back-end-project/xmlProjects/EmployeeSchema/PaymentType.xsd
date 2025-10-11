@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.zeeshan.com/Employee"
+	xmlns:tns="http://www.zeeshan.com/Employee"
+	elementFormDefault="qualified">
+	<complexType name="PaymentType">
+ 	<choice>
+ 	   <element name="cash" type="decimal"/>
+ 	    <element name="upi"/>
+ 	</choice>
+ </complexType>
+</schema>

@@ -1,0 +1,8 @@
+package com.dependencyInjection.demo;
+
+public class Student {
+	String studentName;
+	void dispInfo() {
+	System.out.println("student name is :"+studentName);
+	}
+}

@@ -1,0 +1,14 @@
+package oops;
+
+public class EncapsulationEmployee {
+	protected String empName;
+	
+	public void setName(String newName) {
+	  this.empName=newName;	
+	}
+	
+	public String getName() {
+		return empName;
+	}
+
+}

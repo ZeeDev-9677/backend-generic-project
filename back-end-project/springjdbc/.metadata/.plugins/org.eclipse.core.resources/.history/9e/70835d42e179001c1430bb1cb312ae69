@@ -1,0 +1,16 @@
+package com.jdbc;
+import java.sql.*;
+public class jdbcdemo {
+
+	public static void main(String[] args) throws Exception
+	{
+		String url="";
+		String un="";
+		String pw="";
+		
+		// TODO Auto-generated method stub
+		Class.forName("Driver");
+		Connection con=DriverManager.getConnection(url,un,pw);
+	}
+
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+    <Appenders>
+	    <RollingFile name="LogToFileStarter" fileName="logs/app/starter.log" 
+			filePattern="logs/app/starter-%d{yyyy-MM-dd}-%i.log" >
+		    <PatternLayout>
+                <Pattern>%d %p %C [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="1 MB" />
+            </Policies>
+		</RollingFile>
+	    <RollingFile name="LogToFileDocBasic" fileName="logs/app/docbasic.log" 
+			filePattern="logs/app/docbasic-%d{yyyy-MM-dd}-%i.log" >
+		    <PatternLayout>
+                <Pattern>%d %p %C [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="1 MB" />
+            </Policies>
+		</RollingFile>
+	    <!-- <RollingFile name="LogToFileAuthentication" fileName="logs/app/authentication.log" 
+			filePattern="logs/app/authentication-%d{yyyy-MM-dd}-%i.log" >
+		    <PatternLayout>
+                <Pattern>%d %p %C [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+		</RollingFile>
+	    <RollingFile name="LogToFileGenericUtil" fileName="logs/app/generic-util.log" 
+			filePattern="logs/app/generic-util-%d{yyyy-MM-dd}-%i.log" >
+		    <PatternLayout>
+                <Pattern>%d %p %C [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+		</RollingFile>
+	    <RollingFile name="LogToFileCrmModule" fileName="logs/app/crm-module.log" 
+			filePattern="logs/app/crm-module-%d{yyyy-MM-dd}-%i.log" >
+		    <PatternLayout>
+                <Pattern>%d %p %C [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+		</RollingFile>
+	    <RollingFile name="LogToFileTwiModule" fileName="logs/app/twi-module.log" 
+			filePattern="logs/app/twi-module-%d{yyyy-MM-dd}-%i.log" >
+		    <PatternLayout>
+                <Pattern>%d %p %C [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+		</RollingFile> -->
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <RollingFile name="springframework" fileName="logs/springframework/springframework.log" 
+			filePattern="logs/springframework/springframework-%d{yyyy-MM-dd}-%i.log" >
+		    <PatternLayout>
+                <Pattern>%d %p %C [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+		</RollingFile>
+		<RollingFile name="root" fileName="logs/root/root.log" 
+			filePattern="logs/root/root-%d{yyyy-MM-dd}-%i.log" >
+		    <PatternLayout>
+                <Pattern>%d %p %C [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+		</RollingFile>
+    </Appenders>
+    <Loggers>
+ <!--        <Logger name="com.generic.packages.starter" level="TRACE" additivity="false">
+            <AppenderRef ref="LogToFileStarter"/>
+            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="RollingFile" />
+        </Logger>
+        
+        <Logger name="com.generic.packages.authentication" level="TRACE" additivity="false">
+            <AppenderRef ref="LogToFileAuthentication"/>
+            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="RollingFile" />
+        </Logger>
+        
+        <Logger name="com.generic.packages.genericutil" level="TRACE" additivity="false">
+            <AppenderRef ref="LogToFileGenericUtil"/>
+            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="RollingFile" />
+        </Logger>
+        
+        <Logger name="com.generic.packages.crmmod" level="TRACE" additivity="false">
+            <AppenderRef ref="LogToFileCrmModule"/>
+            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="RollingFile" />
+        </Logger>
+        
+        <Logger name="com.generic.packages.commod" level="TRACE" additivity="false">
+            <AppenderRef ref="LogToFileTwiModule"/>
+            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="RollingFile" />
+        </Logger> -->
+        
+        <Logger name="com.myprojectdoc.main" level="TRACE" additivity="false">
+            <AppenderRef ref="LogToFileStarter"/>
+            <AppenderRef ref="LogToConsole"/>
+        </Logger>
+        <Logger name=" com.myprojectdoc.docbasic" level="TRACE" additivity="false">
+            <AppenderRef ref="LogToFileDocBasic"/>
+            <AppenderRef ref="LogToConsole"/>
+        </Logger>
+        
+        <Logger name="org.springframework.boot" level="TRACE" additivity="false">
+            <AppenderRef ref="springframework"/>
+            <AppenderRef ref="LogToConsole"/>
+            
+        </Logger>
+        <Root level="TRACE">
+            <AppenderRef ref="root"/>
+            <AppenderRef ref="LogToConsole"/>
+        </Root>
+    </Loggers>
+</Configuration>

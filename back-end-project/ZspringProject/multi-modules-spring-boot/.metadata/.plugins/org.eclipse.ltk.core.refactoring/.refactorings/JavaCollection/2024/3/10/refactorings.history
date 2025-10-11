@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ArraySum.java&apos; to &apos;JavaCollection/src/ArrayQuestions&apos;&#x0D;&#x0A;- Original project: &apos;JavaCollection&apos;&#x0D;&#x0A;- Destination element: &apos;JavaCollection/src/ArrayQuestions&apos;&#x0D;&#x0A;- Original element: &apos;interviewQuestions.ArraySum.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;ArrayQuestions" element1="/src&lt;interviewQuestions{ArraySum.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1709912357903" units="1" version="1.0"/>
+</session>

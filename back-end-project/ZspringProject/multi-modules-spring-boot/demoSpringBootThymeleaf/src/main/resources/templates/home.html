@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.com"> <!-- append xmlns:th=="http://www.thymeleaf.com" thymeleaf will work -->
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<h1>Welcome to the tutorials</h1>
+	<h5>Hello this is <span th:text="${ #strings.toUpperCase(name) }"></span> and explore this channel</h5> <!-- name variable value lowercase wll be in uppercase --> 
+	<p>length of the name is <span th:text="${ #strings.length(name)}"></span></p> <!-- just print length of the string -->
+	<h5>today date is <span th:text="${currentDate}"></span></h5> <!-- wll print current date -->
+	
+	<div th:with="a=2,b=3, n=${name}">
+	<h4 th:text="'the value of name is ' +${n}"></h4>
+	<h3 th:text="'sum of '+${a}+' and '+${b}+' is '+${a+b}"></h3> <!-- javaScript concatenation -->
+	</div> <!-- outside div tag value of a,b n will be null -->
+</body>
+</html>

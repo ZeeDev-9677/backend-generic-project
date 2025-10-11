@@ -1,0 +1,27 @@
+package com.firstspringboot.main;
+
+
+
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@EnableAutoConfiguration
+public class FirstSpringBoot {
+	
+	@RequestMapping("/login")
+	private String Home() {
+		
+		return "Welcom to Home Page";
+	}
+
+	public static void main(String[] args) throws Exception {
+		
+		SpringApplication.run(FirstSpringBoot.class, args);
+	}
+
+}

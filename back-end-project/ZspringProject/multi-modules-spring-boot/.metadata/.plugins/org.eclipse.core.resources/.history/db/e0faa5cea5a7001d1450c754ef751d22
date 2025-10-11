@@ -1,0 +1,9 @@
+package oops;
+
+abstract class AbstractAnimal {
+	abstract void animalSound();
+	public void checkd() {
+		System.out.println("Hi I amchecking");
+	}
+
+}

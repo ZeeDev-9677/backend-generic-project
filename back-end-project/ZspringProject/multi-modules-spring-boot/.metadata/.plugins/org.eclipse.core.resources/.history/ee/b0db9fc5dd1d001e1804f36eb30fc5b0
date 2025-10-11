@@ -1,0 +1,9 @@
+package com.dependencyInjection.demo;
+
+public class Alien {
+	private int aid;
+	private String anme;
+	private String tech; 
+	
+
+}
