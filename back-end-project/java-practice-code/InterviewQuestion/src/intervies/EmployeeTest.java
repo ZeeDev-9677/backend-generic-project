@@ -17,8 +17,8 @@ public class EmployeeTest {
 		Map<String, Long> collect = employeeData.stream()
 				.collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
 		System.out.println(collect);
-		
-		//It will return list of employees departments
+
+		// It will return list of employees departments
 		Set<String> collect2 = employeeData.stream().map(e -> e.getDepartment()).collect(Collectors.toSet());
 		System.out.println(collect2);
 
