@@ -16,26 +16,35 @@ public class MaleFemaleEmployeeMain {
 				new MaleFemaleEmployee("Raju", 34, "Male",20000.0),
 				new MaleFemaleEmployee("Amani", 22, "Female",45000.0), 
 				new MaleFemaleEmployee("Raani", 67, "Female",50000.0),
+				new MaleFemaleEmployee("Rathore", 78, "Male",10000.0),
 				new MaleFemaleEmployee("Rahul", 19, "Male",55000.0), 
-				new MaleFemaleEmployee("Priya", 23, "Female",20000.0),
-				new MaleFemaleEmployee("Rathore", 78, "Male",90000.0));
+				new MaleFemaleEmployee("Priya", 23, "Female",20000.0)
+				);
 		/* count number of male and female in list */
-		Map<String, Long> countEmp = empList.stream()
+		Map<String, Long> empCount = empList.stream()
 				.collect(Collectors.groupingBy(MaleFemaleEmployee::getGender, Collectors.counting()));
-	System.out.println(countEmp);
-	
+		System.out.println(empCount);
+		
+		/* highest Employee salary in all*/
+//		MaleFemaleEmployee mm=empList.stream().sorted(Comparator.comparingDouble(MaleFemaleEmployee::getSalary).reversed()).findFirst().get();
+//		System.out.println(mm);
+		
 	/* highest male salary*/
-	Optional<MaleFemaleEmployee> highestMaleSalary = empList.stream().filter(x -> x.getGender().equals("Male"))
-			.max(Comparator.comparingDouble(MaleFemaleEmployee::getSalary));
+	Optional<MaleFemaleEmployee> highestMaleSalary=empList.stream().filter(x->x.getGender().equalsIgnoreCase("Male")).max(Comparator.comparingDouble(MaleFemaleEmployee::getSalary));
+	
 	
 	/* highest female salary*/
 	Optional<MaleFemaleEmployee> highestFemaleSalary = empList.stream().filter(x -> x.getGender().equals("Female"))
 			.max(Comparator.comparingDouble(MaleFemaleEmployee::getSalary));
+//	
+	System.out.println("male highestMaleSalary ->:"+highestMaleSalary.orElse(null));
 	
-//	System.out.println(highestMaleSalary);
-	highestMaleSalary.ifPresent(System.out::println);
-	highestFemaleSalary.ifPresent(System.out::println);
-//	System.out.println(highestFemaleSalary.orElse(null));
+	/* to avoid null case */
+//	highestMaleSalary.ifPresent(System.out::println);
+	
+	/* to avoid null case */
+//	highestFemaleSalary.ifPresent(System.out::println);
+	System.out.println("male highestFemaleSalary ->:"+highestFemaleSalary.orElse(null));
 	}
 
 }
