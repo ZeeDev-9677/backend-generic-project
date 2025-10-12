@@ -26,8 +26,8 @@ public class MaleFemaleEmployeeMain {
 		System.out.println(empCount);
 		
 		/* highest Employee salary in all*/
-//		MaleFemaleEmployee mm=empList.stream().sorted(Comparator.comparingDouble(MaleFemaleEmployee::getSalary).reversed()).findFirst().get();
-//		System.out.println(mm);
+//		MaleFemaleEmployee highestEmployeeSalary=empList.stream().sorted(Comparator.comparingDouble(MaleFemaleEmployee::getSalary).reversed()).findFirst().get();
+//		System.out.println(highestEmployeeSalary);
 		
 	/* highest male salary*/
 	Optional<MaleFemaleEmployee> highestMaleSalary=empList.stream().filter(x->x.getGender().equalsIgnoreCase("Male")).max(Comparator.comparingDouble(MaleFemaleEmployee::getSalary));
