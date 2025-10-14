@@ -11,15 +11,38 @@ public class MaleFemaleEmployeeMain {
 
 	public static void main(String[] args) {
 		List<MaleFemaleEmployee> empList = Arrays.asList(
-				new MaleFemaleEmployee("Ak", 23, "Male",40000.0),
-				new MaleFemaleEmployee("Zareen", 56, "Female",30000.0),
-				new MaleFemaleEmployee("Raju", 34, "Male",20000.0),
-				new MaleFemaleEmployee("Amani", 22, "Female",45000.0), 
-				new MaleFemaleEmployee("Raani", 67, "Female",50000.0),
-				new MaleFemaleEmployee("Rathore", 78, "Male",10000.0),
-				new MaleFemaleEmployee("Rahul", 19, "Male",55000.0), 
-				new MaleFemaleEmployee("Priya", 23, "Female",20000.0)
+				new MaleFemaleEmployee("Manoj", 23, "Male",40000.0,"Corona"),
+				new MaleFemaleEmployee("Zareen", 56, "Female",30000.0,"Heart"),
+				new MaleFemaleEmployee("Raju", 34, "Male",20000.0,"Kidney"),
+				new MaleFemaleEmployee("Amani", 22, "Female",45000.0,"Corona"), 
+				new MaleFemaleEmployee("Raani", 67, "Female",50000.0,"Corona"),
+				new MaleFemaleEmployee("Rathore", 78, "Male",10000.0,"Bones"),
+				new MaleFemaleEmployee("Rahul", 19, "Male",55000.0,"Corona"), 
+				new MaleFemaleEmployee("Priya", 23, "Female",20000.0,"Corona")
 				);
+				/* && x.getAge()>25)= will print corona patient having age >25 */
+		List<MaleFemaleEmployee> ls = empList.stream().filter(x -> x.getDiease().equalsIgnoreCase("Corona") && x.getAge()>25)
+						.collect(Collectors.toList());
+		
+		/* print average salry having age <25 corona patient */
+		Double d = empList.stream().filter(x -> x.getDiease().equalsIgnoreCase("Corona") && x.getAge()<25)
+				.collect(Collectors.averagingDouble(MaleFemaleEmployee::getSalary));
+		System.out.println(d);
+		
+		
+		/* count each patient type */
+		Map<String, Long> c = empList.stream()
+				.collect(Collectors.groupingBy(MaleFemaleEmployee::getDiease, Collectors.counting()));
+		System.out.println(c);
+		
+		/* print only name having Corona disease */
+		
+		System.out.println("Below name having only corona disease are :");
+		for (MaleFemaleEmployee s : ls) {
+
+			System.out.println(s.getName() + " ");
+		}
+		
 		/* count number of male and female in list */
 		Map<String, Long> empCount = empList.stream()
 				.collect(Collectors.groupingBy(MaleFemaleEmployee::getGender, Collectors.counting()));
@@ -46,5 +69,4 @@ public class MaleFemaleEmployeeMain {
 //	highestFemaleSalary.ifPresent(System.out::println);
 	System.out.println("male highestFemaleSalary ->:"+highestFemaleSalary.orElse(null));
 	}
-
 }
