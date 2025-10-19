@@ -13,8 +13,8 @@ import com.school.dao.StudentDao;
 import com.school.dtos.StudentCourseReq;
 import com.school.dtos.StudentDto;
 import com.school.dtos.StudentRespDto;
-import com.school.entities.Course;
 import com.school.entities.Student;
+import com.school.exception.ResourceNotFoundException;
 
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
@@ -137,6 +137,13 @@ public class StudentServiceImpl implements StudentService {
 //        }
 //		return null;
 //		courseDao.save(stud);
+	}
+
+	@Override
+	public Student getStudentDetails(String studId) {
+		
+		
+		return studentDao.findById(Integer.valueOf(studId)).orElseThrow(()->new ResourceNotFoundException("student not found using :"+studId));
 	}
 
 

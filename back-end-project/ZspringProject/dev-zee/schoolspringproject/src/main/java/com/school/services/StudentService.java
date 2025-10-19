@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import com.school.dtos.StudentCourseReq;
 import com.school.dtos.StudentDto;
 import com.school.dtos.StudentRespDto;
+import com.school.entities.Student;
 
 public interface StudentService {
 
@@ -17,6 +18,8 @@ public interface StudentService {
 	ResponseEntity<StudentRespDto> getStudent(StudentDto studentDto);
 
 	ResponseEntity<String> saveStudentCourse(StudentCourseReq studentCourseReq);
+
+	public Student getStudentDetails(String studId);
 
 //	public ResponseEntity<String> saveStudent(StudentDto studentDto);
 

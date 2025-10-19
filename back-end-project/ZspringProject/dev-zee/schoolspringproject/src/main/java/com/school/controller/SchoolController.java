@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,11 +16,15 @@ import com.school.dtos.CourseRespDto;
 import com.school.dtos.StudentCourseReq;
 import com.school.dtos.StudentDto;
 import com.school.dtos.StudentRespDto;
+import com.school.entities.Student;
 import com.school.services.CourseService;
 import com.school.services.StudentService;
 
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
 @RequestMapping("/v1")
+@Slf4j
 public class SchoolController {
 
 	@Autowired
@@ -32,7 +35,9 @@ public class SchoolController {
 	// ************testing of get request***********************
 	@RequestMapping(value = "/testt", method = RequestMethod.GET)
 	public String getHome() {
+		log.info("getHome() started");
 		String str = "Hello I am";
+		log.info("getHome() started");
 		return str;
 	}
 
@@ -81,6 +86,11 @@ public class SchoolController {
 		return this.studentService.getAllStudents();
 	}
 	
+	@RequestMapping(value = "/api/{studId}", method = RequestMethod.GET)
+	public Student getStudentDetails(@PathVariable("studId") String studId) throws Exception {
+
+		return this.studentService.getStudentDetails(studId);
+	}
 	
 //****************************************************COURSE API's********************************************
 	

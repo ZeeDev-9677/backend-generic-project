@@ -29,10 +29,11 @@ public class SecurityConfig {
 //         return http.build();
   
   http.authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests
-  .requestMatchers("/v1/api/course").permitAll() 
-  .requestMatchers("/v1/testt").hasRole("NORMAL") 
+//  .requestMatchers("/v1/api/course").permitAll() 
+  .requestMatchers("/v1/**").permitAll() 
+//  .requestMatchers("/v1/testt").hasRole("NORMAL") 
    
-  .requestMatchers("/v1/api/student").hasRole("ADMIN") 
+//  .requestMatchers("/v1/api/student").hasRole("ADMIN") 
   .anyRequest()
   .authenticated() )
   .formLogin(Customizer.withDefaults()); 

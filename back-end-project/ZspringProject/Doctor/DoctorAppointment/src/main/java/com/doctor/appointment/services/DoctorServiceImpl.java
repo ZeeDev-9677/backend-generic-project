@@ -1,11 +1,16 @@
 package com.doctor.appointment.services;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import com.doctor.appointment.dtos.Docter;
 import com.doctor.appointment.entities.Doctor;
 import com.doctor.appointment.repositories.DoctorDtlRepository;
 import com.doctor.dtos.DoctorReq;
@@ -49,6 +54,14 @@ public class DoctorServiceImpl implements DoctorService {
 
 		this.doctorDtlRepository.save(doctor);
 		return new ResponseEntity<String>("Data saved..", HttpStatus.CREATED);
+	}
+
+	@Override
+	public Docter getDetails(int id) {
+		List<Docter> el=Arrays.asList(new Docter(101,"Abdul","Male"),new Docter(102,"Mahi","Female"),new Docter(103,"Tasi","Male"));
+
+		Docter filter = el.stream().filter(x->x.getId()==id).findAny().get();
+		return filter;
 	}
 
 }
